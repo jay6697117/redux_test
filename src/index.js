@@ -1,7 +1,7 @@
-import React from 'react'
+// import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import store from './redux/store'
+import store from './redux/store';// for store.subscribe 监测redux中状态的改变
 
 ReactDOM.render(<App/>,document.getElementById('root'))
 
