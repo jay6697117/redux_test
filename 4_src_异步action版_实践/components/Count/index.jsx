@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'; // React核心和Component类
 //引入store，用于获取redux中保存状态
 import store from '../../redux/store';
 //引入actionCreator，专门用于创建action对象
