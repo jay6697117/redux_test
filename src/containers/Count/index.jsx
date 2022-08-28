@@ -13,7 +13,7 @@ import { connect } from 'react-redux';
 */
 function mapStateToProps(state) {
   console.log('mapStateToProps state:', state);
-  return { count: state, test: 'hello' };
+  return { count666: state, test: 'hello' };
 }
 
 /*
@@ -22,7 +22,7 @@ function mapStateToProps(state) {
 	3.mapDispatchToProps用于传递操作状态的方法
 */
 function mapDispatchToProps(dispatch) {
-  console.log('mapDispatchToProps dispatch:', dispatch);
+  // console.log('mapDispatchToProps dispatch:', dispatch);
   return {
     jia: number => {
       return dispatch(createIncrementAction(number));

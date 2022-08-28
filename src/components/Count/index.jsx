@@ -30,7 +30,8 @@ export default class Count extends Component {
     console.log('UI组件接收到的props是', this.props);
     return (
       <div>
-        <h1>当前求和为：{this.props.count}</h1>
+        {/* <h1>当前求和为：{this.props.count}</h1> */}
+        <h1>当前求和为：{this.props.count666}</h1>
         <select ref={c => (this.selectNumber = c)}>
           <option value='1'>1</option>
           <option value='2'>2</option>
