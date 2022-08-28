@@ -12,7 +12,8 @@ import { connect } from 'react-redux';
 	3.mapStateToProps用于传递状态
 */
 function mapStateToProps(state) {
-  return { count: state };
+  console.log('mapStateToProps state:', state);
+  return { count: state,test:'hello' };
 }
 
 /*
@@ -21,6 +22,7 @@ function mapStateToProps(state) {
 	3.mapDispatchToProps用于传递操作状态的方法
 */
 function mapDispatchToProps(dispatch) {
+  console.log('mapDispatchToProps dispatch:', dispatch);
   return {
     jia: number => dispatch(createIncrementAction(number)),
     jian: number => dispatch(createDecrementAction(number)),
