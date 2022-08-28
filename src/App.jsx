@@ -1,6 +1,6 @@
 // import React, { Component } from 'react'
 import { Component } from 'react';
-import Count from './containers/Count';//containers
+import Count from './containers/Count'; //containers
 import store from './redux/store';
 
 export default class App extends Component {

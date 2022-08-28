@@ -5,7 +5,6 @@ import { createIncrementAction, createDecrementAction, createIncrementAsyncActio
 
 //引入connect用于连接UI组件与redux
 import { connect } from 'react-redux';
-// import store from '../../redux/store';
 
 /*
 	1.mapStateToProps函数返回的是一个对象；
@@ -26,8 +25,7 @@ function mapDispatchToProps(dispatch) {
   console.log('mapDispatchToProps dispatch:', dispatch);
   return {
     jia: number => {
-      return dispatch({ type: 'increment', data: number });
-      // return dispatch(createIncrementAction(number))
+      return dispatch(createIncrementAction(number));
     },
     jian: number => dispatch(createDecrementAction(number)),
     jiaAsync: (number, time) => dispatch(createIncrementAsyncAction(number, time))
