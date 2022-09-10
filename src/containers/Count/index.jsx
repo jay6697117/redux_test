@@ -13,7 +13,7 @@ import { connect } from 'react-redux';
 */
 function mapStateToProps(state) {
   console.log('mapStateToProps state:', state);
-  return { count666: state, test: 'hello' };
+  return { count: state, test: 'hello' };
 }
 
 /*

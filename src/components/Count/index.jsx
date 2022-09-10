@@ -15,6 +15,7 @@ export default class Count extends Component {
   };
   //奇数再加
   incrementIfOdd = () => {
+    console.log('incrementIfOdd:', this.props, this.props.count);
     const { value } = this.selectNumber;
     if (this.props.count % 2 !== 0) {
       this.props.jia(value * 1);
@@ -31,7 +32,7 @@ export default class Count extends Component {
     return (
       <div>
         {/* <h1>当前求和为：{this.props.count}</h1> */}
-        <h1>当前求和为：{this.props.count666}</h1>
+        <h1>当前求和为：{this.props.count}</h1>
         <select ref={c => (this.selectNumber = c)}>
           <option value='1'>1</option>
           <option value='2'>2</option>
